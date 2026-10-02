@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Survey</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid gray;
+        padding: 8px 16px;
+        text-align: left;
+      }
+      thead, tfoot {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>How We Travel to Campus</h1>
+    </header>
+    <main>
+      <p>Thirty students in our class answered a short survey.</p>
+      <table>
+        <caption>How thirty students travel to campus</caption>
+        <thead>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">How we travel</th>
+            <th scope="col">Students</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="2">Public transport</th>
+            <th scope="row">Bus</th>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td></td>
+            <th scope="row">Train</th>
+            <td>6</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">On foot or by bike</th>
+            <th scope="row">Walking</th>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th scope="row">Cycling</th>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row" rowspan="2">By car</th>
+            <th scope="row">Driving</th>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th scope="row">Getting a lift</th>
+            <td>3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Total</th>
+            <td>30</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>
+      <p>Web Application Development</p>
+    </footer>
+  </body>
+</html>

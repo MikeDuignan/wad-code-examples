@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timetable</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 4px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Timetable</h1>
+    </header>
+    <main>
+      <p>These are my classes for the week.</p>
+      <table>
+        <caption>My weekly timetable</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Module</th>
+            <th scope="col">Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Web Application Development</td>
+            <td>Room 1.12</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Networks</td>
+            <td>Room 2.03</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Databases</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Software Testing</td>
+            <td rowspan="2">Lab 1.07</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Project Work</td>
+          </tr>
+          <tr>
+            <td colspan="3">All labs start ten minutes past the hour.</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>Web Application Development</p>
+    </footer>
+  </body>
+</html>
