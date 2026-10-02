@@ -17,8 +17,7 @@ it is added.
 ## How to use the examples
 
 Type the code yourself while you watch the video, then compare your file with
-the one here. Typing it out is slower than copying it, and it is how the tags
-get into your fingers. If your page looks different, paste your file into the
+the one here. Typing it out is slower than copying it, but is a great way to learn the tags. If your page looks different, paste your file into the
 [W3C validator](https://validator.w3.org/nu/) and read the first message it
 gives.
 
