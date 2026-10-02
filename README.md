@@ -46,4 +46,4 @@ it has no title. That is expected. The head is added in step two.
 | 3. Links | [`week-02/03-links`](week-02/03-links) | Links to other sites and a mail link. The mistake file leaves `https://` off an address, which the validator cannot see, so we check links by clicking them. |
 | 4. A table, step by step | [`week-02/04-table-example`](week-02/04-table-example) | The travel survey table, planned and built from the outside in, with a few lines of styling. The mistake file has an extra empty cell. |
 
-New weeks are added as they are taught.
+New weeks are added as they are covered.
