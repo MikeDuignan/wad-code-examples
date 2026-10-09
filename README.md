@@ -57,10 +57,10 @@ it has no title. That is expected. The head is added in step two.
 | 5. Validation and input | [`week-03/05-form-validation`](week-03/05-form-validation) | The same form with `required`, a placeholder, a date box with `min` and `max`, and a `pattern`. The mistake file writes the dates the way we say them aloud instead of year, month, day. |
 | 6. Additional HTML | [`week-03/06-additional-html`](week-03/06-additional-html) | The bakery opening hours page, with `lang`, `id`, `title`, `div` and `span`, a non-breaking space and character references. The mistake file types an email address in angle brackets without the references. |
 
-The pictures the bakery pages refer to (`images/logo.svg`, `images/loaf.jpg`,
-`images/scones.jpeg` and `images/harbour.jpg`) are not in this repository. Put
-any pictures with those names in an `images` folder beside the home page to see
-them, or watch what the page does when they are missing, which is what video 3
-is about.
+The bakery pictures are in the `images` folders of videos 2 and 3, next to
+each home page, so the pages show them as they do in the videos. The logo is a
+drawing and the three pictures of food and the harbour were generated for the
+course. Videos 1, 4, 5 and 6 need no pictures. In video 3, the file called
+`scones.jpeg` is spelled that way on purpose.
 
 New weeks are added as they are covered.
