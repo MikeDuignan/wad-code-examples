@@ -46,4 +46,21 @@ it has no title. That is expected. The head is added in step two.
 | 3. Links | [`week-02/03-links`](week-02/03-links) | Links to other sites and a mail link. The mistake file leaves `https://` off an address, which the validator cannot see, so we check links by clicking them. |
 | 4. A table, step by step | [`week-02/04-table-example`](week-02/04-table-example) | The travel survey table, planned and built from the outside in, with a few lines of styling. The mistake file has an extra empty cell. |
 
+## Week 3
+
+| Video | Folder | What is in it |
+|---|---|---|
+| 1. Linking to internal pages | [`week-03/01-internal-links`](week-03/01-internal-links) | The Harbour Bakery site: a home page, an about page and a menu page in a `pages` folder, linked with relative paths. The mistake file is the menu page with its links written as if it were beside the home page. |
+| 2. Images in HTML | [`week-03/02-images`](week-03/02-images) | The home page with a logo link and a loaf in a `figure` with a caption. The mistake file leaves the `alt` text off the logo. |
+| 3. Troubleshooting images and links | [`week-03/03-troubleshooting`](week-03/03-troubleshooting) | The finished home page and menu page, and three mistake files: a link without the `pages` folder, a file ending of `.jpg` for `.jpeg`, and an extra `../` in a picture path. The validator cannot see any of these, so we find them with the routine in the video. |
+| 4. Forms and form controls | [`week-03/04-forms`](week-03/04-forms) | The Book Club sign-up form with labels, text, email, password and number boxes, radio buttons, checkboxes, a drop-down list, a text area and two buttons. In the mistake file a label points at an `id` that does not exist. |
+| 5. Validation and input | [`week-03/05-form-validation`](week-03/05-form-validation) | The same form with `required`, a placeholder, a date box with `min` and `max`, and a `pattern`. The mistake file writes the dates the way we say them aloud instead of year, month, day. |
+| 6. Additional HTML | [`week-03/06-additional-html`](week-03/06-additional-html) | The bakery opening hours page, with `lang`, `id`, `title`, `div` and `span`, a non-breaking space and character references. The mistake file types an email address in angle brackets without the references. |
+
+The pictures the bakery pages refer to (`images/logo.svg`, `images/loaf.jpg`,
+`images/scones.jpeg` and `images/harbour.jpg`) are not in this repository. Put
+any pictures with those names in an `images` folder beside the home page to see
+them, or watch what the page does when they are missing, which is what video 3
+is about.
+
 New weeks are added as they are covered.

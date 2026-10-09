@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Club Sign-up</title>
+  </head>
+  <body>
+    <header>
+      <h1>Join Our Book Club</h1>
+    </header>
+    <main>
+      <p>We meet once a month to talk about one book.</p>
+      <form action="index.html" method="post">
+        <p>
+          <label for="full-name">Full name</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </p>
+        <p>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com">
+        </p>
+        <p>
+          <label for="password">Choose a password</label>
+          <input type="password" id="password" name="password">
+        </p>
+        <p>
+          <label for="books">Books you read last year</label>
+          <input type="number" id="books" name="books">
+        </p>
+        <p>
+          <label for="start-date">When would you like to start?</label>
+          <input type="date" id="start-date" name="start-date"
+            min="2026-09-01" max="2026-12-31" required>
+        </p>
+        <p>
+          <label for="library-card">Library card number</label>
+          <input type="text" id="library-card" name="library-card"
+            pattern="[0-9]{6}" title="Six digits">
+        </p>
+        <fieldset>
+          <legend>How would you like to meet?</legend>
+          <input type="radio" id="in-person" name="meeting" value="in-person">
+          <label for="in-person">In person</label>
+          <input type="radio" id="online" name="meeting" value="online">
+          <label for="online">Online</label>
+        </fieldset>
+        <fieldset>
+          <legend>Which kinds of book do you enjoy?</legend>
+          <input type="checkbox" id="crime" name="genre" value="crime">
+          <label for="crime">Crime</label>
+          <input type="checkbox" id="history" name="genre" value="history">
+          <label for="history">History</label>
+          <input type="checkbox" id="poetry" name="genre" value="poetry">
+          <label for="poetry">Poetry</label>
+        </fieldset>
+        <p>
+          <label for="evening">Which evening suits you?</label>
+          <select id="evening" name="evening">
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+          </select>
+        </p>
+        <p>
+          <label for="suggestion">A book you would like us to read</label>
+          <textarea id="suggestion" name="suggestion" rows="4" cols="40"></textarea>
+        </p>
+        <p>
+          <button type="submit">Join the club</button>
+          <button type="reset">Start again</button>
+        </p>
+      </form>
+    </main>
+    <footer>
+      <p>Web Application Development</p>
+    </footer>
+  </body>
+</html>
