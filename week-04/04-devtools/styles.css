@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  color: saddlebrown;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+main ul .special {
+  color: dimgray;
+}
+
+main ul .special {
+  color: saddlebrown;
+}
+
+main {
+  max-width: 25rem;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: dimgray;
+}

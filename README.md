@@ -1,8 +1,8 @@
 # Web Application Development: code examples
 
 This repository holds the code from the lecture videos, week by week. Each
-example is a plain HTML file that opens in any browser. Nothing needs to be
-installed or built.
+example is a plain HTML file that opens in any browser. From Week 4 a page also
+has a CSS file beside it. Nothing needs to be installed or built.
 
 ## Getting the files
 
@@ -27,6 +27,13 @@ In most folders there are two files:
 - `index-with-mistake.html` is the same page with the mistake that the video
   makes on purpose. Open it in the validator to see the messages, then find the
   difference between the two files.
+
+From Week 4, `styles.css` holds the CSS and `index.html` links to it, so keep
+the two files together in the same folder. A mistake may be in the CSS, in a
+file such as `styles-with-mistake.css`. To try it, change the `href` in the
+`link` element of `index.html` to the name of the mistake file, then change it
+back. The CSS validator is at
+[jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/).
 
 ## Week 1
 
@@ -62,5 +69,19 @@ each home page, so the pages show them as they do in the videos. The logo is a
 drawing and the three pictures of food and the harbour were generated for the
 course. Videos 1, 4, 5 and 6 need no pictures. In video 3, the file called
 `scones.jpeg` is spelled that way on purpose.
+
+## Week 4
+
+| Video | Folder | What is in it |
+|---|---|---|
+| 1. CSS: an introduction | [`week-04/01-css-introduction`](week-04/01-css-introduction) | The Harbour Bakery home page, linked to `styles.css`, which holds one rule that makes the `h1` brown. The two files in `steps` show the other ways of writing the rule: an inline `style` attribute, and a `style` element in the head. There is no mistake file. |
+| 2. Selectors, inheritance and the cascade | [`week-04/02-selectors-and-cascade`](week-04/02-selectors-and-cascade) | The finished page and style sheet: rules for `body`, for `h1` and `h2` together, for the links inside `nav`, for the class `special`, for `main` and for `footer`. There is no mistake file. |
+| 3. Colour and text | [`week-04/03-colour-and-text`](week-04/03-colour-and-text) | The page and style sheet at the end of the video, with named, hex, `rgb` and `hsl` colours, a font stack, sizes, spacing and alignment. This page has its own `index.html`, because its text is a little different from the other three. In `styles-with-mistake.css` the footer text is a light orange, `hsl(30, 60%, 55%)`, on the brown background. The contrast is only 2.6 to 1, below the 4.5 to 1 that the guidelines ask for. The validators accept it, so we measure it with a contrast checker. |
+| 4. Inspecting and fixing CSS in the browser | [`week-04/04-devtools`](week-04/04-devtools) | The finished page, and a style sheet with the `line-height` added in the video and the three fixes made. The first `main ul .special` rule is the grey one that the video treats as written by someone else, and the second is our fix. The video has three faults, one file each: `styles-with-mistake-colour.css` spells `color` as `colour`, which the CSS validator reports; `styles-with-mistake-specificity.css` has a `main ul .special` rule that turns the lemon drizzle cake grey and beats our `.special` rule, which no validator sees; and `index-with-mistake-link.html` links to `style.css` instead of `styles.css`, which the HTML validator cannot see. Chrome DevTools shows all three. |
+
+None of the Week 4 pages uses a picture, so there are no `images` folders. The
+navigation links on these pages go to the About and Menu pages from Week 3,
+which are not copied into the Week 4 folders, so those two links do not open
+anything.
 
 New weeks are added as they are covered.
