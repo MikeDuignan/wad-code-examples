@@ -35,6 +35,11 @@ file such as `styles-with-mistake.css`. To try it, change the `href` in the
 back. The CSS validator is at
 [jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/).
 
+From Week 5, the last two videos use JavaScript. The script is inside the HTML
+file, between `script` tags at the end of the `body`, so each page is still one
+file. `prompt` and `alert` open small boxes over the page, so open these pages
+in Chrome and answer the boxes as the videos do.
+
 ## Week 1
 
 | Video | Folder | What is in it |
@@ -83,5 +88,19 @@ None of the Week 4 pages uses a picture, so there are no `images` folders. The
 navigation links on these pages go to the About and Menu pages from Week 3,
 which are not copied into the Week 4 folders, so those two links do not open
 anything.
+
+## Week 5
+
+| Video | Folder | What is in it |
+|---|---|---|
+| 1. Layout with flexbox and positioning | [`week-05/01-layout`](week-05/01-layout) | The Harbour Bakery home page and style sheet at the end of the video. The header and the navigation are flex containers, the three cards sit in a row and share the space with `flex: 1`, and a New label sits on the third card, with `position: relative` on the card and `position: absolute` on the label. |
+| 2. Responsive design | [`week-05/02-responsive-design`](week-05/02-responsive-design) | The same page made to adapt to small screens: sizes in `rem`, an image with `max-width: 100%` and `height: auto`, and a media query at the end of the style sheet that stacks the navigation and the cards when the window is `40rem` wide or narrower. The `viewport` line is in the `head` of `index.html`. |
+| 3. Introduction to JavaScript | [`week-05/03-introduction-to-javascript`](week-05/03-introduction-to-javascript) | `hello.html`, the page at the end of the video: a heading, and a script at the end of the body that keeps a message in a variable and writes it to the page with `document.write`. |
+| 4. The basics of JavaScript | [`week-05/04-basics-of-javascript`](week-05/04-basics-of-javascript) | Three pages. `basics.html` keeps two numbers in variables and writes their sum. `greeting.html` asks for a name with `prompt` and greets the user. `adding.html` asks for two numbers and writes their sum. `adding-with-mistake.html` leaves out `Number`, so 23 and 34 give 2334, as in the video, instead of 57. |
+
+`images/loaf.jpg` in the responsive folder is a drawing made for the course. As in
+Week 4, the navigation links on the two bakery pages go to the About and Menu
+pages from Week 3, which are not copied into the Week 5 folders, so those two
+links do not open anything.
 
 New weeks are added as they are covered.

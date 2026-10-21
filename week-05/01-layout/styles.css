@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background-color: floralwhite;
+}
+
+h1,
+h2,
+h3 {
+  color: #5a3a22;
+}
+
+header,
+main,
+footer {
+  padding: 16px 32px;
+}
+
+nav a {
+  color: saddlebrown;
+}
+
+article {
+  background-color: white;
+  border: 1px solid tan;
+  padding: 16px;
+  flex: 1;
+  position: relative;
+}
+
+footer {
+  color: dimgray;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: saddlebrown;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+}
