@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click counter</title>
+  </head>
+  <body>
+    <h1>Click counter</h1>
+    <button onclick="addOne()">Add one</button>
+    <button onclick="showTotal()">Show total</button>
+    <script>
+      // The number of clicks, shared by both functions
+      var clicks = 0;
+
+      function addOne() {
+        clicks = clicks + 1;
+      }
+
+      function showTotal() {
+        alert(clicks);
+      }
+    </script>
+  </body>
+</html>

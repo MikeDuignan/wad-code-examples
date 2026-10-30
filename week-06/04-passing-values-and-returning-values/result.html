@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam result</title>
+  </head>
+  <body>
+    <script>
+      /* Gives back the result for an exam score:
+         forty or more is a pass. */
+      function getResult(score) {
+        if (score >= 40) {
+          return "You passed";
+        } else {
+          return "Try again";
+        }
+      }
+      var examScore = 25;
+      document.write(getResult(examScore));
+    </script>
+  </body>
+</html>

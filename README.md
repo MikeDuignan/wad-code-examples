@@ -103,4 +103,15 @@ Week 4, the navigation links on the two bakery pages go to the About and Menu
 pages from Week 3, which are not copied into the Week 5 folders, so those two
 links do not open anything.
 
+## Week 6
+
+| Video | Folder | What is in it |
+|---|---|---|
+| 1. Decisions in JavaScript | [`week-06/01-decisions`](week-06/01-decisions) | `score.html` asks for an exam score and says You passed or Try again with `if` and `else`, and `grade.html` is the finished page at the end of the video: a chain of `else if` tests for the bands, with a check that the score is valid (`score < 0 \|\| score > 100`). In `score-with-mistake.html` the test is `score > 40`, so a score of exactly 40 gets Try again, as in the video. The fix is `>=`. |
+| 2. Loops in JavaScript | [`week-06/02-loops`](week-06/02-loops) | `counting.html` is the finished counting page: a `for` loop whose last number the user chooses with `prompt`, and a `<br>` after each number. `attempts.html` asks for a password up to three times and leaves the loop with `break` when the answer is right. In `counting-with-mistake.html` there is no line break, so the three numbers run together as 123. |
+| 3. Functions in JavaScript | [`week-06/03-functions`](week-06/03-functions) | `functions.html` defines a function and calls it from a button with `onclick`, and `counter.html` has two buttons, Add one and Show total, that share one variable. In `functions-with-mistake.html` the function uses `document.write`, so clicking the button replaces the whole page. |
+| 4. Passing values to functions and getting values back | [`week-06/04-passing-values-and-returning-values`](week-06/04-passing-values-and-returning-values) | `area.html` is a function with parameters that returns its answer, called with variables and shown with `alert`. `result.html` is a function that decides and returns a message, which the page writes with `document.write`. In `area-with-mistake.html` the call has no `alert` around it, so the returned value is thrown away and nothing appears. |
+
+These pages use `prompt` and `alert`, so open them in a browser; a code editor's preview may block the pop-up boxes.
+
 New weeks are added as they are covered.
