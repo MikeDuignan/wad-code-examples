@@ -114,4 +114,15 @@ links do not open anything.
 
 These pages use `prompt` and `alert`, so open them in a browser; a code editor's preview may block the pop-up boxes.
 
+## Week 7
+
+| Video | Folder | What is in it |
+|---|---|---|
+| 1. From document.write to the DOM | [`week-07/01-dom-intro`](week-07/01-dom-intro) | `dom.html` finds elements with `getElementById` and `querySelector` and changes their text with `textContent`. `var-loop.html` and `let-loop.html` are the two small loop pages from the video: with `var`, the counter `i` is still there after the loop, and with `let` it is not. |
+| 2. Changing what is on the page | [`week-07/02-content`](week-07/02-content) | `content.html` changes text and markup, an attribute and a link on a page, and shows the difference between `textContent` and `innerHTML`. `reading-list.html` builds a list from an array of book titles with a loop, creating one `li` for each title. |
+| 3. Reacting to the User with Events | [`week-07/03-events`](week-07/03-events) | `events.html` is the bus stop page: a button, and a function attached with `addEventListener`. In `events-with-mistake.html` the function name has brackets after it, so it runs at once and the button does nothing. `events-head.html` has the script in the head, before the elements exist, so the page logs an error. `tally.html` reads a number from a text box and keeps a running total. In `tally-with-mistake.html` the value is used as text, so adding twelve and then eight gives 0128 instead of 20. |
+| 4. Changing styles with JavaScript | [`week-07/04-styles`](week-07/04-styles) | `styles.html` marks an item as sold out with the `style` property. `highlight.html` switches a CSS class on and off with `classList.toggle`, and `highlight-ifelse.html` is the longer way to do the same with `contains`, `add` and `remove`. |
+
+The Week 7 pages need no pop-ups, so they also work in a code editor's preview.
+
 New weeks are added as they are covered.

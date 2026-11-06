@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter reading list</title>
+  </head>
+  <body>
+    <h1>Winter reading list</h1>
+    <p id="draft-note">Draft: titles still to be confirmed.</p>
+    <ul id="reading-list"></ul>
+    <script>
+      // Build the list items from an array of titles.
+      const titles = ['Sea Road', 'Salt and Rain', 'Garden Year', 'Night Ferry'];
+      const readingList = document.getElementById('reading-list');
+      for (const title of titles) {
+        const listItem = document.createElement('li');
+        listItem.textContent = title;
+        readingList.append(listItem);
+      }
+      // The draft note is no longer needed.
+      const draftNote = document.getElementById('draft-note');
+      draftNote.remove();
+    </script>
+  </body>
+</html>

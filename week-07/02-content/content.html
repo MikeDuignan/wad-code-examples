@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed catalogue</title>
+  </head>
+  <body>
+    <h1 id="seed-name">Sweet pea</h1>
+    <p id="seed-summary">Details to follow.</p>
+    <p>With textContent: <span id="plain-demo"></span></p>
+    <p>With innerHTML: <span id="markup-demo"></span></p>
+    <p><a id="supplier-link" href="#">Buy seed from the supplier</a></p>
+    <p id="link-report"></p>
+    <script>
+      // Replace the text of the heading.
+      const seedName = document.getElementById('seed-name');
+      seedName.textContent = 'Sweet pea: a scented climber';
+      // The same string, put on the page in two different ways.
+      const sowingNote = 'Sow <b>after the last frost</b>.';
+      const plainDemo = document.getElementById('plain-demo');
+      const markupDemo = document.getElementById('markup-demo');
+      plainDemo.textContent = sowingNote;
+      markupDemo.innerHTML = sowingNote;
+      // Markup that the page author wrote, so innerHTML is the right tool here.
+      const seedSummary = document.getElementById('seed-summary');
+      seedSummary.innerHTML = '<em>Hardy annual</em>: sow <strong>early</strong>.';
+      // Change attributes of the link.
+      const supplierLink = document.getElementById('supplier-link');
+      supplierLink.href = 'https://example.org/sweet-pea';
+      supplierLink.title = "Opens the supplier's page";
+      supplierLink.setAttribute('target', '_blank');
+      supplierLink.setAttribute('rel', 'noopener noreferrer');
+      // Read an attribute back.
+      const linkReport = document.getElementById('link-report');
+      linkReport.textContent = 'Link goes to ' + supplierLink.getAttribute('href');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery notices</title>
+    <style>
+      .notice {
+        margin-bottom: 16px;
+        padding: 16px;
+        border: 3px solid gray;
+        background-color: white;
+      }
+
+      .highlighted {
+        border-color: firebrick;
+        background-color: lightyellow;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bakery noticeboard</h1>
+    <p class="notice">Flour delivery on Thursday morning</p>
+    <button id="urgent-button">Mark as urgent</button>
+    <script>
+      const deliveryNotice = document.querySelector('.notice');
+      const urgentButton = document.getElementById('urgent-button');
+
+      function toggleUrgentMark() {
+        if (deliveryNotice.classList.contains('highlighted')) {
+          deliveryNotice.classList.remove('highlighted');
+        } else {
+          deliveryNotice.classList.add('highlighted');
+        }
+      }
+
+      urgentButton.addEventListener('click', toggleUrgentMark);
+    </script>
+  </body>
+</html>

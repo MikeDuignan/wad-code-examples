@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery noticeboard</title>
+  </head>
+  <body>
+    <h1>Bakery noticeboard</h1>
+    <p id="sourdough-sign">Fresh sourdough loaves, baked this morning</p>
+    <button id="sold-out-button">Mark as sold out</button>
+    <script>
+      const sourdoughSign = document.getElementById('sourdough-sign');
+      const soldOutButton = document.getElementById('sold-out-button');
+
+      function markSoldOut() {
+        sourdoughSign.style.opacity = '0.4';
+        sourdoughSign.style.textDecoration = 'line-through';
+      }
+
+      soldOutButton.addEventListener('click', markSoldOut);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock-take</title>
+  </head>
+  <body>
+    <h1>Stock-take</h1>
+    <label for="box-count-input">Boxes counted in this bay</label>
+    <input type="text" id="box-count-input">
+    <button id="add-boxes-button">Add to total</button>
+    <p id="stock-total">Total boxes: 0</p>
+    <p id="stock-message"></p>
+    <script>
+      const boxInput = document.getElementById('box-count-input');
+      const addButton = document.getElementById('add-boxes-button');
+      const totalDisplay = document.getElementById('stock-total');
+      const messageDisplay = document.getElementById('stock-message');
+
+      // The running total, kept between clicks
+      let totalBoxes = 0;
+
+      function addBoxes() {
+        const boxesCounted = Number(boxInput.value);
+        if (boxInput.value === '' || Number.isNaN(boxesCounted)) {
+          messageDisplay.textContent = 'Please type a number of boxes.';
+          return;
+        }
+        totalBoxes = totalBoxes + boxesCounted;
+        totalDisplay.textContent = 'Total boxes: ' + totalBoxes;
+        messageDisplay.textContent = '';
+        boxInput.value = '';
+      }
+
+      addButton.addEventListener('click', addBoxes);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus stop display</title>
+    <script>
+      const nextBusButton = document.getElementById('next-bus-button');
+      const busMessage = document.getElementById('bus-message');
+
+      function showNextBus() {
+        busMessage.textContent = 'Bus 7 to the harbour leaves in 4 minutes.';
+      }
+
+      nextBusButton.addEventListener('click', showNextBus);
+    </script>
+  </head>
+  <body>
+    <h1>Harbour Road bus stop</h1>
+    <button id="next-bus-button">Show next bus</button>
+    <p id="bus-message">Press the button to see the next bus.</p>
+  </body>
+</html>
