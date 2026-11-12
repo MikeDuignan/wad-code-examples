@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click and collect</title>
+  </head>
+  <body>
+    <h1>Click and collect</h1>
+    <label for="loaf-select">Loaf</label>
+    <select id="loaf-select">
+      <option>Sourdough</option>
+      <option>Brown soda bread</option>
+      <option>Rye</option>
+    </select>
+    <label for="quantity-input">Quantity</label>
+    <input type="number" id="quantity-input" value="1" min="1">
+    <button id="save-button">Save order</button>
+    <p id="order-message">No order saved yet.</p>
+    <script>
+      const loafSelect = document.getElementById('loaf-select');
+      const quantityInput = document.getElementById('quantity-input');
+      const saveButton = document.getElementById('save-button');
+      const orderMessage = document.getElementById('order-message');
+
+      function saveOrder() {
+        const order = {
+          loaf: loafSelect.value,
+          quantity: Number(quantityInput.value),
+        };
+        localStorage.setItem('order', JSON.stringify(order));
+        orderMessage.textContent = 'Order saved.';
+      }
+
+      saveButton.addEventListener('click', saveOrder);
+
+      const savedText = localStorage.getItem('order');
+      if (savedText !== null) {
+        const order = JSON.parse(savedText);
+        orderMessage.textContent = `Saved order: ${order.quantity} ${order.loaf}`;
+      }
+    </script>
+  </body>
+</html>

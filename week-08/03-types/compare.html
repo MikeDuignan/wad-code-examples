@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparing values</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        font-family: Consolas, monospace;
+      }
+
+      th,
+      td {
+        border: 1px solid gray;
+        padding: 4px 12px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Comparing values</h1>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">What</th>
+          <th scope="col">Result</th>
+          <th scope="col">Type</th>
+        </tr>
+      </thead>
+      <tbody id="result-rows"></tbody>
+    </table>
+    <script>
+      // Adds one row to the results table.
+      const resultRows = document.getElementById('result-rows');
+
+      function show(label, result) {
+        const row = document.createElement('tr');
+        for (const text of [label, result, typeof result]) {
+          const cell = document.createElement('td');
+          cell.textContent = text;
+          row.append(cell);
+        }
+        resultRows.append(row);
+      }
+
+      // Two equals signs convert, three do not
+      show('number 4 == string 4', 4 == '4');
+      show('number 4 === string 4', 4 === '4');
+      show('0 == false', 0 == false);
+      show('0 === false', 0 === false);
+    </script>
+  </body>
+</html>

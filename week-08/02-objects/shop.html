@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All books</title>
+  </head>
+  <body>
+    <h1>Corner Books</h1>
+    <h2>All books</h2>
+    <ul id="book-list"></ul>
+    <script>
+      // One object for each book.
+      const books = [
+        {id: 1, title: 'The Quiet Crossing', price: 14},
+        {id: 2, title: 'Nine Days in March', price: 9},
+        {id: 3, title: 'The Second Lighthouse', price: 12},
+      ];
+
+      // Show each book as an item in the list.
+      const bookList = document.getElementById('book-list');
+      for (const book of books) {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${book.title}: €${book.price}`;
+        bookList.append(listItem);
+      }
+    </script>
+  </body>
+</html>

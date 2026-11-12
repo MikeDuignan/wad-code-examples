@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book details</title>
+  </head>
+  <body>
+    <h1>Corner Books</h1>
+    <h2 id="book-title">Book title</h2>
+    <p>Price: €<span id="book-price"></span></p>
+    <p>Cover colour: <span id="book-cover"></span></p>
+    <p>Published by: <span id="book-publisher"></span></p>
+    <script>
+      const book = {
+        title: 'The Quiet Crossing',
+        author: 'Ellen Brady',
+        price: 14,
+        inStock: true,
+        publisher: {
+          name: 'Lantern Press',
+          county: 'Galway',
+        },
+      };
+
+      // Find the parts of the page that show the book.
+      const bookTitle = document.getElementById('book-title');
+      const bookPrice = document.getElementById('book-price');
+      const bookCover = document.getElementById('book-cover');
+      const bookPublisher = document.getElementById('book-publisher');
+
+      bookTitle.textContent = book.title;
+      bookPrice.textContent = book['price'];
+
+      // The book goes on sale.
+      book.price = 10;
+      bookPrice.textContent = book.price;
+
+      // Add a new property.
+      book.coverColor = 'Dark blue';
+      bookCover.textContent = book.coverColor;
+
+      bookPublisher.textContent = book.publisher.name;
+    </script>
+  </body>
+</html>

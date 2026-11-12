@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scone order</title>
+  </head>
+  <body>
+    <h1>Harbour Bakery scones</h1>
+    <label for="scone-quantity">How many scones?</label>
+    <input type="number" id="scone-quantity" min="1" value="6">
+    <button id="cost-button">Work out the cost</button>
+    <p id="scone-cost">Press the button to see the cost.</p>
+    <script>
+      const quantityInput = document.getElementById('scone-quantity');
+      const costButton = document.getElementById('cost-button');
+      const costDisplay = document.getElementById('scone-costs');
+      const sconePrice = 2.5;
+
+      function showCost() {
+        const quantity = Number(quantityInput.value);
+        const cost = quantity * sconePrice;
+        costDisplay.textContent = 'Cost: €' + cost;
+      }
+
+      costButton.addEventListener('click', showCost);
+    </script>
+  </body>
+</html>

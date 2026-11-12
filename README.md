@@ -125,4 +125,17 @@ These pages use `prompt` and `alert`, so open them in a browser; a code editor's
 
 The Week 7 pages need no pop-ups, so they also work in a code editor's preview.
 
+## Week 8
+
+| Video | Folder | What is in it |
+|---|---|---|
+| 1. Arrays in JavaScript | [`week-08/01-arrays`](week-08/01-arrays) | `bakes.html` keeps a bakery's bakes in an array, adds one with `push`, shows the first bake and the number of bakes, lists them with a loop, checks for one with `includes`, and picks one at random. |
+| 2. Objects | [`week-08/02-objects`](week-08/02-objects) | `product.html` builds a `book` object for a bookshop, reads its properties with a dot and with brackets, changes one, adds one, and reads a property of the object inside it. `shop.html` keeps an array of such objects and shows them on the page. |
+| 3. Types, coercion and comparison | [`week-08/03-types`](week-08/03-types) | `types.html` fills a table with values and their `typeof`: three types, one variable that changes type, and what `+`, `*` and `-` do when a string is involved. `compare.html` shows `==` and `===` side by side, and why `===` is the one to use. |
+| 4. JSON and browser storage | [`week-08/04-json-storage`](week-08/04-json-storage) | `order.html` turns an order into JSON with `JSON.stringify`, saves it in `localStorage`, and reads it back with `JSON.parse` when the page loads again. |
+| 5. Troubleshooting JavaScript in the browser | [`week-08/05-troubleshooting`](week-08/05-troubleshooting) | `scone-order.html` is the working page. The other four are the mistakes the video makes on purpose, each with its message in the Console: `scone-order-reference-error.html` (`quanity`), `scone-order-not-a-function.html` (`getElementByID`), `scone-order-null.html` (an `id` with an extra `s`) and `scone-order-syntax-error.html` (a missing closing brace). |
+
+The Week 8 pages need no pop-ups, so they also work in a code editor's preview.
+Open the mistake pages in Chrome with the Console open (F12), as the troubleshooting video does.
+
 New weeks are added as they are covered.

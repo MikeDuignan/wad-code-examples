@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's bakes</title>
+  </head>
+  <body>
+    <h1>Today's bakes</h1>
+    <p>First out of the oven: <span id="first-bake"></span></p>
+    <p>Bakes today: <span id="bake-count"></span></p>
+    <ul id="bake-list"></ul>
+    <p id="scone-note"></p>
+    <p>Pick of the day: <span id="todays-pick"></span></p>
+    <script>
+      const bakes = ['Sourdough', 'Rye loaf', 'Scones', 'Croissants'];
+      bakes.push('Cinnamon swirls');
+
+      const firstBake = document.getElementById('first-bake');
+      firstBake.textContent = bakes[0];
+
+      const bakeCount = document.getElementById('bake-count');
+      bakeCount.textContent = bakes.length;
+
+      const bakeList = document.getElementById('bake-list');
+      for (const bake of bakes) {
+        const item = document.createElement('li');
+        item.textContent = bake;
+        bakeList.append(item);
+      }
+
+      const sconeNote = document.getElementById('scone-note');
+      if (bakes.includes('Scones')) {
+        sconeNote.textContent = 'Fresh scones today.';
+      }
+
+      const todaysPick = document.getElementById('todays-pick');
+      const pickIndex = Math.floor(Math.random() * bakes.length);
+      todaysPick.textContent = bakes[pickIndex];
+    </script>
+  </body>
+</html>
