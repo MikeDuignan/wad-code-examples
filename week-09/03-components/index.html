@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Bakehouse | Home</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+      integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"
+        aria-label="Main navigation">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Corner Bakehouse</a>
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#shop-nav"
+            aria-controls="shop-nav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="shop-nav">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="index.html"
+                aria-current="page">Home</a>
+              <a class="nav-link" href="#products">Products</a>
+              <a class="nav-link" href="#prices">Prices</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container py-4">
+      <h1>Corner Bakehouse</h1>
+      <p class="lead">Bread and bakes, fresh each morning.</p>
+      <p class="mb-5">
+        <a class="btn btn-primary btn-lg" href="#products">Browse bakes</a>
+        <a class="btn btn-outline-secondary" href="#prices">View prices</a>
+      </p>
+      <section id="products" class="mb-5">
+        <h2>From the counter</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <article class="card h-100">
+              <img src="images/scone.png" class="card-img-top"
+                alt="A golden scone split in two">
+              <div class="card-body">
+                <h3 class="card-title">Scones</h3>
+                <p class="card-text">Baked each morning. 2.50 euro each.</p>
+                <a class="btn btn-primary btn-sm" href="#prices">View prices</a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <img src="images/sourdough.png" class="card-img-top"
+                alt="A round loaf with a scored crust">
+              <div class="card-body">
+                <h3 class="card-title">Sourdough</h3>
+                <p class="card-text">Slow risen bread. 4.50 euro a loaf.</p>
+                <a class="btn btn-primary btn-sm" href="#prices">View prices</a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <img src="images/brownie.png" class="card-img-top"
+                alt="Two chocolate brownies">
+              <div class="card-body">
+                <h3 class="card-title">Brownies</h3>
+                <p class="card-text">Rich chocolate. 3.00 euro each.</p>
+                <a class="btn btn-primary btn-sm" href="#prices">View prices</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="pictures" class="mb-5">
+        <h2>A closer look</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <img src="images/scone-square.png" class="img-fluid rounded"
+              width="300" height="300" alt="A golden scone split in two">
+          </div>
+          <div class="col">
+            <img src="images/sourdough-square.png"
+              class="img-fluid rounded-circle" width="300" height="300"
+              alt="A round loaf with a scored crust">
+          </div>
+          <div class="col">
+            <img src="images/brownie-square.png" class="img-thumbnail"
+              width="300" height="300" alt="Two chocolate brownies">
+          </div>
+        </div>
+      </section>
+      <section id="prices" class="mb-5">
+        <h2>Prices</h2>
+        <div class="table-responsive" tabindex="0"
+          role="region" aria-label="Counter prices">
+          <table class="table table-striped table-hover table-bordered text-nowrap">
+            <caption>Counter prices, in euro</caption>
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Single</th>
+                <th scope="col">Box of four</th>
+                <th scope="col">Ready for collection</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Scone</th>
+                <td>2.50</td>
+                <td>9.00</td>
+                <td>09:00 each morning</td>
+              </tr>
+              <tr>
+                <th scope="row">Sourdough loaf</th>
+                <td>4.50</td>
+                <td>16.00</td>
+                <td>08:00 each morning</td>
+              </tr>
+              <tr>
+                <th scope="row">Brownie</th>
+                <td>3.00</td>
+                <td>11.00</td>
+                <td>10:00 each morning</td>
+              </tr>
+              <tr>
+                <th scope="row">Croissant</th>
+                <td>2.80</td>
+                <td>10.00</td>
+                <td>08:00 each morning</td>
+              </tr>
+              <tr>
+                <th scope="row">Flapjack</th>
+                <td>2.20</td>
+                <td>8.00</td>
+                <td>10:00 each morning</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="featured" class="mb-5">
+        <h2>Fresh from the oven</h2>
+        <div id="bake-carousel" class="carousel slide"
+          data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bake-carousel"
+              data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Scones"></button>
+            <button type="button" data-bs-target="#bake-carousel"
+              data-bs-slide-to="1" aria-label="Sourdough"></button>
+            <button type="button" data-bs-target="#bake-carousel"
+              data-bs-slide-to="2" aria-label="Brownies"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/scone-banner.png" class="d-block w-100"
+                alt="A golden scone split in two">
+            </div>
+            <div class="carousel-item">
+              <img src="images/sourdough-banner.png" class="d-block w-100"
+                alt="A round loaf with a scored crust">
+            </div>
+            <div class="carousel-item">
+              <img src="images/brownie-banner.png" class="d-block w-100"
+                alt="Two chocolate brownies">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#bake-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#bake-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="container py-4">
+      <p>Corner Bakehouse. Open Tuesday to Saturday, 08:00 to 16:00.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

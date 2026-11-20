@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Corner Bakehouse</title>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+      integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="container py-3">
+      <p class="h4">Corner Bakehouse</p>
+      <p class="mb-0">Bread, bakes and a warm welcome.</p>
+    </header>
+    <main class="container pb-3">
+      <h1>Contact the bakery</h1>
+      <p>Ask about a bake or a collection. All fields except the checkbox are required.</p>
+      <div class="row g-4">
+        <section class="col-md-7" aria-label="Contact form">
+          <form id="contact-form" method="post"
+            class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6 mb-3">
+                <label for="full-name" class="form-label">Name</label>
+                <input type="text" id="full-name" name="fullName"
+                  class="form-control" autocomplete="name" required
+                  aria-describedby="name-error">
+                <div id="name-error" class="invalid-feedback">Enter your name.</div>
+                <div class="valid-feedback">Name entered.</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email"
+                  class="form-control" autocomplete="email" required
+                  aria-describedby="email-error">
+                <div id="email-error" class="invalid-feedback">
+                  Enter an email address.
+                </div>
+                <div class="valid-feedback">Email format accepted.</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <select id="subject" name="subject" class="form-select"
+                required aria-describedby="subject-error">
+                <option value="">Choose a subject</option>
+                <option value="collection">Collection</option>
+                <option value="products">Products</option>
+              </select>
+              <div id="subject-error" class="invalid-feedback">Choose a subject.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message (at least 10 characters)</label>
+              <textarea id="message" name="message" class="form-control"
+                rows="2" required minlength="10"
+                aria-describedby="message-error"></textarea>
+              <div id="message-error" class="invalid-feedback">
+                Use at least 10 characters.
+              </div>
+              <div class="valid-feedback">Message length accepted.</div>
+            </div>
+            <div class="form-check mb-3">
+              <input type="checkbox" id="send-copy" name="sendCopy"
+                value="yes" class="form-check-input">
+              <label for="send-copy" class="form-check-label">
+                Send me a copy (optional)
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary brand-button">
+              Check message
+            </button>
+          </form>
+          <p class="mt-3">Demo form: nothing is sent.</p>
+        </section>
+        <aside class="col-md-5" aria-labelledby="visit-heading">
+          <div class="p-3 bg-light border shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span>Collection enquiries</span>
+              <span class="text-bg-success p-2">Welcome</span>
+            </div>
+            <h2 id="visit-heading" class="h4">Visit the bakery</h2>
+            <img src="images/bakes.svg" class="w-100 mb-3 d-none d-md-block"
+              alt="Illustration of sourdough, a scone and a brownie">
+            <p>12 Market Lane<br>Call: 091 555 0100</p>
+            <p class="text-danger">For allergy information, please call.</p>
+            <ul id="opening-hours" class="list-unstyled">
+              <li>Tuesday to Saturday: 8 am to 4 pm</li>
+              <li>Sunday and Monday: closed</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="container py-3 border-top">
+      <p class="mb-0">Corner Bakehouse · Made fresh, shared locally.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+      crossorigin="anonymous"></script>
+    <script>
+      const contactForm = document.querySelector('.needs-validation');
+      contactForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Demo only: no server to receive it.
+        contactForm.classList.add('was-validated');
+        if (!contactForm.checkValidity()) {
+          contactForm.querySelector(':invalid').focus();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -139,3 +139,14 @@ The Week 8 pages need no pop-ups, so they also work in a code editor's preview.
 Open the mistake pages in Chrome with the Console open (F12), as the troubleshooting video does.
 
 New weeks are added as they are covered.
+
+## Week 9
+
+| Video | Folder | What is in it |
+|---|---|---|
+| 1. Introduction to Bootstrap and getting started | [`week-09/01-getting-started`](week-09/01-getting-started) | `starter.html` is the plain page skeleton the video begins with, and `index.html` is the Corner Bakehouse page it ends with: container, typography, spacing classes and an image. |
+| 2. The Bootstrap grid | [`week-09/02-grid`](week-09/02-grid) | `starter.html` is the empty page, and `grid.html` is the finished product grid: columns, breakpoints, gutters, offsets and `row-cols`. The six product pictures are in `images`. |
+| 3. Components | [`week-09/03-components`](week-09/03-components) | `starter.html` is the page with its headings, price table and Bootstrap link but no components yet, and `index.html` has the navbar, buttons, cards, images, a table and the carousel. The product pictures are in `images`. |
+| 4. Forms, utilities and your own CSS | [`week-09/04-forms-utilities`](week-09/04-forms-utilities) | `starter.html` is the page before the form, `contact.html` is the finished contact page with Bootstrap form classes and validation, and `styles.css` is our own stylesheet that loads after Bootstrap. |
+
+Each folder keeps its pictures in an `images` folder beside the page, so open the page from inside its folder. The Bootstrap files come from a CDN, so the pages need an internet connection.
